@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+    my-server:
+      image: ubuntu:20.04
+      tty: true
+      command: ["cat"]
+      volumes:
+      - type: bind
+        source: ./assets
+        target: /assets
